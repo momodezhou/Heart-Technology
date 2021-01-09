@@ -1,0 +1,2326 @@
+.
+├── cli
+│   ├── cli
+│   │   ├── command
+│   │   │   ├── builder
+│   │   │   ├── checkpoint
+│   │   │   │   └── testdata
+│   │   │   ├── commands
+│   │   │   ├── config
+│   │   │   │   └── testdata
+│   │   │   ├── container
+│   │   │   │   └── testdata
+│   │   │   ├── context
+│   │   │   │   └── testdata
+│   │   │   ├── formatter
+│   │   │   │   └── testdata
+│   │   │   ├── idresolver
+│   │   │   ├── image
+│   │   │   │   ├── build
+│   │   │   │   └── testdata
+│   │   │   ├── inspect
+│   │   │   ├── manifest
+│   │   │   │   └── testdata
+│   │   │   ├── network
+│   │   │   │   └── testdata
+│   │   │   ├── node
+│   │   │   │   └── testdata
+│   │   │   ├── plugin
+│   │   │   │   └── testdata
+│   │   │   ├── registry
+│   │   │   │   └── testdata
+│   │   │   ├── secret
+│   │   │   │   └── testdata
+│   │   │   ├── service
+│   │   │   │   ├── progress
+│   │   │   │   └── testdata
+│   │   │   ├── stack
+│   │   │   │   ├── formatter
+│   │   │   │   ├── kubernetes
+│   │   │   │   │   └── testdata
+│   │   │   │   ├── loader
+│   │   │   │   ├── options
+│   │   │   │   ├── swarm
+│   │   │   │   └── testdata
+│   │   │   ├── swarm
+│   │   │   │   ├── progress
+│   │   │   │   └── testdata
+│   │   │   ├── system
+│   │   │   │   └── testdata
+│   │   │   ├── task
+│   │   │   │   └── testdata
+│   │   │   ├── testdata
+│   │   │   ├── trust
+│   │   │   │   └── testdata
+│   │   │   └── volume
+│   │   │       └── testdata
+│   │   ├── compose
+│   │   │   ├── convert
+│   │   │   ├── interpolation
+│   │   │   ├── loader
+│   │   │   ├── schema
+│   │   │   │   └── data
+│   │   │   ├── template
+│   │   │   └── types
+│   │   ├── config
+│   │   │   ├── configfile
+│   │   │   │   └── testdata
+│   │   │   ├── credentials
+│   │   │   └── types
+│   │   ├── connhelper
+│   │   │   ├── commandconn
+│   │   │   └── ssh
+│   │   ├── context
+│   │   │   ├── docker
+│   │   │   ├── kubernetes
+│   │   │   │   └── testdata
+│   │   │   └── store
+│   │   ├── debug
+│   │   ├── flags
+│   │   ├── manifest
+│   │   │   ├── store
+│   │   │   └── types
+│   │   ├── registry
+│   │   │   └── client
+│   │   ├── streams
+│   │   ├── trust
+│   │   ├── version
+│   │   └── winresources
+│   ├── cli-plugins
+│   │   ├── examples
+│   │   │   └── helloworld
+│   │   ├── manager
+│   │   └── plugin
+│   ├── cmd
+│   │   └── docker
+│   ├── contrib
+│   │   └── completion
+│   │       ├── bash
+│   │       ├── fish
+│   │       ├── powershell
+│   │       └── zsh
+│   ├── dockerfiles
+│   ├── docs
+│   │   ├── extend
+│   │   │   └── images
+│   │   ├── reference
+│   │   │   └── commandline
+│   │   └── yaml
+│   ├── e2e
+│   │   ├── cli-plugins
+│   │   │   ├── plugins
+│   │   │   │   ├── badmeta
+│   │   │   │   └── nopersistentprerun
+│   │   │   └── testdata
+│   │   ├── container
+│   │   │   └── testdata
+│   │   ├── context
+│   │   │   └── testdata
+│   │   │       └── test-dockerconfig
+│   │   │           └── contexts
+│   │   │               └── meta
+│   │   │                   └── b71199ebd070b36beab7317920c2c2f1d777df8d05e5527d8458fda57cb17a7a
+│   │   ├── global
+│   │   ├── image
+│   │   │   └── testdata
+│   │   │       └── notary
+│   │   ├── internal
+│   │   │   └── fixtures
+│   │   ├── plugin
+│   │   │   └── basic
+│   │   ├── stack
+│   │   │   └── testdata
+│   │   ├── system
+│   │   ├── testdata
+│   │   │   ├── connhelper-ssh
+│   │   │   ├── notary
+│   │   │   └── notary-evil
+│   │   └── trust
+│   ├── experimental
+│   │   └── images
+│   ├── internal
+│   │   └── test
+│   │       ├── builders
+│   │       ├── environment
+│   │       ├── network
+│   │       ├── notary
+│   │       └── output
+│   ├── kubernetes
+│   │   ├── client
+│   │   │   ├── clientset
+│   │   │   │   ├── scheme
+│   │   │   │   └── typed
+│   │   │   │       └── compose
+│   │   │   │           ├── v1beta1
+│   │   │   │           └── v1beta2
+│   │   │   ├── informers
+│   │   │   │   ├── compose
+│   │   │   │   │   └── v1beta2
+│   │   │   │   └── internalinterfaces
+│   │   │   └── listers
+│   │   │       └── compose
+│   │   │           └── v1beta2
+│   │   ├── compose
+│   │   │   ├── clone
+│   │   │   ├── impersonation
+│   │   │   ├── v1beta1
+│   │   │   └── v1beta2
+│   │   └── labels
+│   ├── man
+│   │   └── src
+│   │       ├── container
+│   │       ├── image
+│   │       ├── network
+│   │       ├── plugin
+│   │       ├── system
+│   │       └── volume
+│   ├── opts
+│   ├── scripts
+│   │   ├── build
+│   │   ├── docs
+│   │   ├── gen
+│   │   ├── test
+│   │   │   └── e2e
+│   │   ├── validate
+│   │   └── winresources
+│   ├── service
+│   │   └── logs
+│   ├── templates
+│   └── vendor
+│       ├── cloud.google.com
+│       │   └── go
+│       │       ├── cmd
+│       │       │   └── go-cloud-debug-agent
+│       │       │       └── internal
+│       │       │           └── debug
+│       │       │               └── gosym
+│       │       └── compute
+│       │           └── metadata
+│       ├── github.com
+│       │   ├── Azure
+│       │   │   └── go-ansiterm
+│       │   │       └── winterm
+│       │   ├── Microsoft
+│       │   │   ├── go-winio
+│       │   │   │   ├── pkg
+│       │   │   │   │   └── guid
+│       │   │   │   └── vhd
+│       │   │   └── hcsshim
+│       │   │       ├── internal
+│       │   │       │   ├── cow
+│       │   │       │   ├── hcs
+│       │   │       │   ├── hcserror
+│       │   │       │   ├── hns
+│       │   │       │   ├── interop
+│       │   │       │   ├── log
+│       │   │       │   ├── logfields
+│       │   │       │   ├── longpath
+│       │   │       │   ├── mergemaps
+│       │   │       │   ├── oc
+│       │   │       │   ├── safefile
+│       │   │       │   ├── schema1
+│       │   │       │   ├── schema2
+│       │   │       │   ├── timeout
+│       │   │       │   ├── vmcompute
+│       │   │       │   └── wclayer
+│       │   │       └── osversion
+│       │   ├── agl
+│       │   │   └── ed25519
+│       │   │       └── edwards25519
+│       │   ├── beorn7
+│       │   │   └── perks
+│       │   │       └── quantile
+│       │   ├── cespare
+│       │   │   └── xxhash
+│       │   │       └── v2
+│       │   ├── containerd
+│       │   │   ├── cgroups
+│       │   │   │   └── stats
+│       │   │   │       └── v1
+│       │   │   ├── console
+│       │   │   ├── containerd
+│       │   │   │   ├── api
+│       │   │   │   │   └── services
+│       │   │   │   │       └── content
+│       │   │   │   │           └── v1
+│       │   │   │   ├── content
+│       │   │   │   │   ├── local
+│       │   │   │   │   └── proxy
+│       │   │   │   ├── defaults
+│       │   │   │   ├── errdefs
+│       │   │   │   ├── filters
+│       │   │   │   ├── log
+│       │   │   │   ├── platforms
+│       │   │   │   ├── remotes
+│       │   │   │   │   ├── docker
+│       │   │   │   │   │   └── auth
+│       │   │   │   │   └── errors
+│       │   │   │   ├── services
+│       │   │   │   │   └── content
+│       │   │   │   │       └── contentserver
+│       │   │   │   └── sys
+│       │   │   ├── continuity
+│       │   │   │   ├── fs
+│       │   │   │   └── sysx
+│       │   │   └── typeurl
+│       │   ├── coreos
+│       │   │   └── etcd
+│       │   │       └── raft
+│       │   │           └── raftpb
+│       │   ├── cpuguy83
+│       │   │   └── go-md2man
+│       │   │       └── v2
+│       │   │           └── md2man
+│       │   ├── creack
+│       │   │   └── pty
+│       │   ├── davecgh
+│       │   │   └── go-spew
+│       │   │       └── spew
+│       │   ├── docker
+│       │   │   ├── compose-on-kubernetes
+│       │   │   │   └── api
+│       │   │   │       ├── client
+│       │   │   │       │   ├── clientset
+│       │   │   │       │   │   ├── scheme
+│       │   │   │       │   │   └── typed
+│       │   │   │       │   │       └── compose
+│       │   │   │       │   │           ├── v1alpha3
+│       │   │   │       │   │           ├── v1beta1
+│       │   │   │       │   │           └── v1beta2
+│       │   │   │       │   ├── informers
+│       │   │   │       │   │   ├── compose
+│       │   │   │       │   │   │   ├── v1alpha3
+│       │   │   │       │   │   │   └── v1beta2
+│       │   │   │       │   │   └── internalinterfaces
+│       │   │   │       │   └── listers
+│       │   │   │       │       └── compose
+│       │   │   │       │           ├── v1alpha3
+│       │   │   │       │           └── v1beta2
+│       │   │   │       ├── compose
+│       │   │   │       │   ├── clone
+│       │   │   │       │   ├── impersonation
+│       │   │   │       │   ├── v1alpha3
+│       │   │   │       │   ├── v1beta1
+│       │   │   │       │   └── v1beta2
+│       │   │   │       └── labels
+│       │   │   ├── distribution
+│       │   │   │   ├── digestset
+│       │   │   │   ├── manifest
+│       │   │   │   │   ├── manifestlist
+│       │   │   │   │   └── schema2
+│       │   │   │   ├── metrics
+│       │   │   │   ├── reference
+│       │   │   │   ├── registry
+│       │   │   │   │   ├── api
+│       │   │   │   │   │   ├── errcode
+│       │   │   │   │   │   └── v2
+│       │   │   │   │   ├── client
+│       │   │   │   │   │   ├── auth
+│       │   │   │   │   │   │   └── challenge
+│       │   │   │   │   │   └── transport
+│       │   │   │   │   └── storage
+│       │   │   │   │       └── cache
+│       │   │   │   │           └── memory
+│       │   │   │   └── uuid
+│       │   │   ├── docker
+│       │   │   │   ├── api
+│       │   │   │   │   └── types
+│       │   │   │   │       ├── blkiodev
+│       │   │   │   │       ├── container
+│       │   │   │   │       ├── events
+│       │   │   │   │       ├── filters
+│       │   │   │   │       ├── image
+│       │   │   │   │       ├── mount
+│       │   │   │   │       ├── network
+│       │   │   │   │       ├── registry
+│       │   │   │   │       ├── strslice
+│       │   │   │   │       ├── swarm
+│       │   │   │   │       │   └── runtime
+│       │   │   │   │       ├── time
+│       │   │   │   │       ├── versions
+│       │   │   │   │       └── volume
+│       │   │   │   ├── builder
+│       │   │   │   │   └── remotecontext
+│       │   │   │   │       └── git
+│       │   │   │   ├── client
+│       │   │   │   ├── contrib
+│       │   │   │   │   ├── nnp-test
+│       │   │   │   │   └── syscall-test
+│       │   │   │   ├── errdefs
+│       │   │   │   ├── pkg
+│       │   │   │   │   ├── archive
+│       │   │   │   │   ├── fileutils
+│       │   │   │   │   ├── homedir
+│       │   │   │   │   ├── idtools
+│       │   │   │   │   ├── ioutils
+│       │   │   │   │   ├── jsonmessage
+│       │   │   │   │   ├── longpath
+│       │   │   │   │   ├── pools
+│       │   │   │   │   ├── progress
+│       │   │   │   │   ├── signal
+│       │   │   │   │   ├── stdcopy
+│       │   │   │   │   ├── streamformatter
+│       │   │   │   │   ├── stringid
+│       │   │   │   │   ├── system
+│       │   │   │   │   └── urlutil
+│       │   │   │   ├── registry
+│       │   │   │   └── rootless
+│       │   │   ├── docker-credential-helpers
+│       │   │   │   ├── client
+│       │   │   │   ├── credentials
+│       │   │   │   ├── osxkeychain
+│       │   │   │   └── secretservice
+│       │   │   ├── go
+│       │   │   │   └── canonical
+│       │   │   │       └── json
+│       │   │   ├── go-connections
+│       │   │   │   ├── nat
+│       │   │   │   ├── sockets
+│       │   │   │   └── tlsconfig
+│       │   │   ├── go-events
+│       │   │   ├── go-metrics
+│       │   │   ├── go-units
+│       │   │   └── swarmkit
+│       │   │       ├── api
+│       │   │       │   ├── deepcopy
+│       │   │       │   ├── defaults
+│       │   │       │   └── genericresource
+│       │   │       ├── manager
+│       │   │       │   └── raftselector
+│       │   │       └── protobuf
+│       │   │           └── plugin
+│       │   ├── evanphx
+│       │   │   └── json-patch
+│       │   ├── fvbommel
+│       │   │   └── sortorder
+│       │   ├── gofrs
+│       │   │   └── flock
+│       │   ├── gogo
+│       │   │   ├── googleapis
+│       │   │   │   └── google
+│       │   │   │       └── rpc
+│       │   │   └── protobuf
+│       │   │       ├── gogoproto
+│       │   │       ├── proto
+│       │   │       ├── protobuf
+│       │   │       │   └── google
+│       │   │       │       └── protobuf
+│       │   │       │           └── compiler
+│       │   │       ├── protoc-gen-gogo
+│       │   │       │   └── descriptor
+│       │   │       ├── sortkeys
+│       │   │       ├── test
+│       │   │       │   └── issue270
+│       │   │       │       ├── a
+│       │   │       │       └── b
+│       │   │       └── types
+│       │   ├── golang
+│       │   │   ├── glog
+│       │   │   ├── groupcache
+│       │   │   │   └── lru
+│       │   │   └── protobuf
+│       │   │       ├── jsonpb
+│       │   │       ├── proto
+│       │   │       └── ptypes
+│       │   │           ├── any
+│       │   │           ├── duration
+│       │   │           ├── struct
+│       │   │           └── timestamp
+│       │   ├── google
+│       │   │   ├── go-cmp
+│       │   │   │   └── cmp
+│       │   │   │       ├── cmpopts
+│       │   │   │       └── internal
+│       │   │   │           ├── diff
+│       │   │   │           ├── function
+│       │   │   │           └── value
+│       │   │   ├── gofuzz
+│       │   │   └── shlex
+│       │   ├── googleapis
+│       │   │   └── gnostic
+│       │   │       ├── OpenAPIv2
+│       │   │       ├── compiler
+│       │   │       └── extensions
+│       │   ├── gorilla
+│       │   │   └── mux
+│       │   ├── grpc-ecosystem
+│       │   │   ├── go-grpc-middleware
+│       │   │   ├── grpc-gateway
+│       │   │   │   ├── options
+│       │   │   │   └── third_party
+│       │   │   │       └── googleapis
+│       │   │   │           └── google
+│       │   │   │               └── api
+│       │   │   └── grpc-opentracing
+│       │   │       ├── go
+│       │   │       │   └── otgrpc
+│       │   │       └── python
+│       │   │           └── examples
+│       │   │               └── protos
+│       │   ├── hashicorp
+│       │   │   └── golang-lru
+│       │   │       └── simplelru
+│       │   ├── imdario
+│       │   │   └── mergo
+│       │   ├── inconshreveable
+│       │   │   └── mousetrap
+│       │   ├── jaguilar
+│       │   │   └── vt100
+│       │   ├── json-iterator
+│       │   │   └── go
+│       │   ├── matttproud
+│       │   │   └── golang_protobuf_extensions
+│       │   │       └── pbutil
+│       │   ├── miekg
+│       │   │   └── pkcs11
+│       │   ├── mitchellh
+│       │   │   └── mapstructure
+│       │   ├── moby
+│       │   │   ├── buildkit
+│       │   │   │   ├── api
+│       │   │   │   │   ├── services
+│       │   │   │   │   │   └── control
+│       │   │   │   │   └── types
+│       │   │   │   ├── client
+│       │   │   │   │   ├── buildid
+│       │   │   │   │   ├── connhelper
+│       │   │   │   │   ├── llb
+│       │   │   │   │   └── ociindex
+│       │   │   │   ├── frontend
+│       │   │   │   │   ├── dockerfile
+│       │   │   │   │   │   └── dockerignore
+│       │   │   │   │   └── gateway
+│       │   │   │   │       ├── client
+│       │   │   │   │       ├── grpcclient
+│       │   │   │   │       └── pb
+│       │   │   │   ├── identity
+│       │   │   │   ├── session
+│       │   │   │   │   ├── auth
+│       │   │   │   │   │   └── authprovider
+│       │   │   │   │   ├── content
+│       │   │   │   │   ├── filesync
+│       │   │   │   │   ├── grpchijack
+│       │   │   │   │   ├── secrets
+│       │   │   │   │   │   └── secretsprovider
+│       │   │   │   │   └── sshforward
+│       │   │   │   │       └── sshprovider
+│       │   │   │   ├── solver
+│       │   │   │   │   ├── errdefs
+│       │   │   │   │   └── pb
+│       │   │   │   └── util
+│       │   │   │       ├── apicaps
+│       │   │   │       │   └── pb
+│       │   │   │       ├── appcontext
+│       │   │   │       ├── appdefaults
+│       │   │   │       ├── entitlements
+│       │   │   │       ├── flightcontrol
+│       │   │   │       ├── grpcerrors
+│       │   │   │       ├── progress
+│       │   │   │       │   ├── progressui
+│       │   │   │       │   └── progresswriter
+│       │   │   │       ├── sshutil
+│       │   │   │       ├── stack
+│       │   │   │       └── system
+│       │   │   ├── sys
+│       │   │   │   ├── mount
+│       │   │   │   ├── mountinfo
+│       │   │   │   └── symlink
+│       │   │   └── term
+│       │   │       └── windows
+│       │   ├── modern-go
+│       │   │   ├── concurrent
+│       │   │   └── reflect2
+│       │   ├── morikuni
+│       │   │   └── aec
+│       │   ├── opencontainers
+│       │   │   ├── go-digest
+│       │   │   ├── image-spec
+│       │   │   │   └── specs-go
+│       │   │   │       └── v1
+│       │   │   └── runc
+│       │   │       └── libcontainer
+│       │   │           ├── nsenter
+│       │   │           └── user
+│       │   ├── opentracing
+│       │   │   └── opentracing-go
+│       │   │       ├── ext
+│       │   │       └── log
+│       │   ├── pkg
+│       │   │   └── errors
+│       │   ├── prometheus
+│       │   │   ├── client_golang
+│       │   │   │   └── prometheus
+│       │   │   │       ├── internal
+│       │   │   │       └── promhttp
+│       │   │   ├── client_model
+│       │   │   │   └── go
+│       │   │   ├── common
+│       │   │   │   ├── expfmt
+│       │   │   │   ├── internal
+│       │   │   │   │   └── bitbucket.org
+│       │   │   │   │       └── ww
+│       │   │   │   │           └── goautoneg
+│       │   │   │   └── model
+│       │   │   └── procfs
+│       │   │       └── internal
+│       │   │           ├── fs
+│       │   │           └── util
+│       │   ├── russross
+│       │   │   └── blackfriday
+│       │   │       └── v2
+│       │   ├── shurcooL
+│       │   │   └── sanitized_anchor_name
+│       │   ├── sirupsen
+│       │   │   └── logrus
+│       │   ├── spf13
+│       │   │   ├── cobra
+│       │   │   │   └── doc
+│       │   │   └── pflag
+│       │   ├── theupdateframework
+│       │   │   └── notary
+│       │   │       ├── client
+│       │   │       │   └── changelist
+│       │   │       ├── cryptoservice
+│       │   │       ├── passphrase
+│       │   │       ├── storage
+│       │   │       ├── trustmanager
+│       │   │       │   └── yubikey
+│       │   │       ├── trustpinning
+│       │   │       └── tuf
+│       │   │           ├── data
+│       │   │           ├── signed
+│       │   │           ├── utils
+│       │   │           └── validation
+│       │   ├── tonistiigi
+│       │   │   ├── fsutil
+│       │   │   │   └── types
+│       │   │   ├── go-rosetta
+│       │   │   └── units
+│       │   └── xeipuuv
+│       │       ├── gojsonpointer
+│       │       ├── gojsonreference
+│       │       └── gojsonschema
+│       ├── go.opencensus.io
+│       │   ├── internal
+│       │   └── trace
+│       │       ├── internal
+│       │       └── tracestate
+│       ├── golang.org
+│       │   └── x
+│       │       ├── crypto
+│       │       │   ├── blowfish
+│       │       │   ├── chacha20
+│       │       │   ├── curve25519
+│       │       │   ├── ed25519
+│       │       │   │   └── internal
+│       │       │   │       └── edwards25519
+│       │       │   ├── internal
+│       │       │   │   └── subtle
+│       │       │   ├── nacl
+│       │       │   │   └── sign
+│       │       │   ├── otr
+│       │       │   ├── pbkdf2
+│       │       │   ├── poly1305
+│       │       │   └── ssh
+│       │       │       ├── agent
+│       │       │       ├── internal
+│       │       │       │   └── bcrypt_pbkdf
+│       │       │       ├── terminal
+│       │       │       └── test
+│       │       ├── net
+│       │       │   ├── context
+│       │       │   │   └── ctxhttp
+│       │       │   ├── http
+│       │       │   │   └── httpguts
+│       │       │   ├── http2
+│       │       │   │   └── hpack
+│       │       │   ├── idna
+│       │       │   ├── internal
+│       │       │   │   ├── socks
+│       │       │   │   └── timeseries
+│       │       │   ├── proxy
+│       │       │   └── trace
+│       │       ├── oauth2
+│       │       │   ├── google
+│       │       │   ├── internal
+│       │       │   ├── jws
+│       │       │   └── jwt
+│       │       ├── sync
+│       │       │   └── errgroup
+│       │       ├── sys
+│       │       │   ├── cpu
+│       │       │   ├── internal
+│       │       │   │   └── unsafeheader
+│       │       │   ├── plan9
+│       │       │   ├── unix
+│       │       │   └── windows
+│       │       │       └── svc
+│       │       ├── term
+│       │       ├── text
+│       │       │   ├── secure
+│       │       │   │   └── bidirule
+│       │       │   ├── transform
+│       │       │   ├── unicode
+│       │       │   │   ├── bidi
+│       │       │   │   └── norm
+│       │       │   └── width
+│       │       └── time
+│       │           └── rate
+│       ├── google.golang.org
+│       │   ├── genproto
+│       │   │   └── googleapis
+│       │   │       └── rpc
+│       │   │           └── status
+│       │   └── grpc
+│       │       ├── attributes
+│       │       ├── backoff
+│       │       ├── balancer
+│       │       │   ├── base
+│       │       │   └── roundrobin
+│       │       ├── binarylog
+│       │       │   └── grpc_binarylog_v1
+│       │       ├── codes
+│       │       ├── connectivity
+│       │       ├── credentials
+│       │       │   └── internal
+│       │       ├── encoding
+│       │       │   └── proto
+│       │       ├── grpclog
+│       │       ├── health
+│       │       │   └── grpc_health_v1
+│       │       ├── internal
+│       │       │   ├── backoff
+│       │       │   ├── balancerload
+│       │       │   ├── binarylog
+│       │       │   ├── buffer
+│       │       │   ├── channelz
+│       │       │   ├── envconfig
+│       │       │   ├── grpcrand
+│       │       │   ├── grpcsync
+│       │       │   ├── resolver
+│       │       │   │   ├── dns
+│       │       │   │   └── passthrough
+│       │       │   ├── syscall
+│       │       │   └── transport
+│       │       ├── keepalive
+│       │       ├── metadata
+│       │       ├── naming
+│       │       ├── peer
+│       │       ├── resolver
+│       │       ├── serviceconfig
+│       │       ├── stats
+│       │       ├── status
+│       │       └── tap
+│       ├── gopkg.in
+│       │   ├── inf.v0
+│       │   └── yaml.v2
+│       ├── gotest.tools
+│       │   └── v3
+│       │       ├── assert
+│       │       │   └── cmp
+│       │       ├── env
+│       │       ├── fs
+│       │       ├── golden
+│       │       ├── icmd
+│       │       ├── internal
+│       │       │   ├── cleanup
+│       │       │   ├── difflib
+│       │       │   ├── format
+│       │       │   └── source
+│       │       ├── poll
+│       │       ├── skip
+│       │       └── x
+│       │           └── subtest
+│       ├── k8s.io
+│       │   ├── api
+│       │   │   ├── admissionregistration
+│       │   │   │   ├── v1
+│       │   │   │   └── v1beta1
+│       │   │   ├── apps
+│       │   │   │   ├── v1
+│       │   │   │   ├── v1beta1
+│       │   │   │   └── v1beta2
+│       │   │   ├── auditregistration
+│       │   │   │   └── v1alpha1
+│       │   │   ├── authentication
+│       │   │   │   ├── v1
+│       │   │   │   └── v1beta1
+│       │   │   ├── authorization
+│       │   │   │   ├── v1
+│       │   │   │   └── v1beta1
+│       │   │   ├── autoscaling
+│       │   │   │   ├── v1
+│       │   │   │   ├── v2beta1
+│       │   │   │   └── v2beta2
+│       │   │   ├── batch
+│       │   │   │   ├── v1
+│       │   │   │   ├── v1beta1
+│       │   │   │   └── v2alpha1
+│       │   │   ├── certificates
+│       │   │   │   └── v1beta1
+│       │   │   ├── coordination
+│       │   │   │   ├── v1
+│       │   │   │   └── v1beta1
+│       │   │   ├── core
+│       │   │   │   └── v1
+│       │   │   ├── discovery
+│       │   │   │   └── v1alpha1
+│       │   │   ├── events
+│       │   │   │   └── v1beta1
+│       │   │   ├── extensions
+│       │   │   │   └── v1beta1
+│       │   │   ├── networking
+│       │   │   │   ├── v1
+│       │   │   │   └── v1beta1
+│       │   │   ├── node
+│       │   │   │   ├── v1alpha1
+│       │   │   │   └── v1beta1
+│       │   │   ├── policy
+│       │   │   │   └── v1beta1
+│       │   │   ├── rbac
+│       │   │   │   ├── v1
+│       │   │   │   ├── v1alpha1
+│       │   │   │   └── v1beta1
+│       │   │   ├── scheduling
+│       │   │   │   ├── v1
+│       │   │   │   ├── v1alpha1
+│       │   │   │   └── v1beta1
+│       │   │   ├── settings
+│       │   │   │   └── v1alpha1
+│       │   │   └── storage
+│       │   │       ├── v1
+│       │   │       ├── v1alpha1
+│       │   │       └── v1beta1
+│       │   ├── apimachinery
+│       │   │   ├── pkg
+│       │   │   │   ├── api
+│       │   │   │   │   ├── errors
+│       │   │   │   │   ├── meta
+│       │   │   │   │   └── resource
+│       │   │   │   ├── apis
+│       │   │   │   │   └── meta
+│       │   │   │   │       ├── internalversion
+│       │   │   │   │       ├── v1
+│       │   │   │   │       │   └── unstructured
+│       │   │   │   │       └── v1beta1
+│       │   │   │   ├── conversion
+│       │   │   │   │   └── queryparams
+│       │   │   │   ├── fields
+│       │   │   │   ├── labels
+│       │   │   │   ├── runtime
+│       │   │   │   │   ├── schema
+│       │   │   │   │   └── serializer
+│       │   │   │   │       ├── json
+│       │   │   │   │       ├── protobuf
+│       │   │   │   │       ├── recognizer
+│       │   │   │   │       ├── streaming
+│       │   │   │   │       └── versioning
+│       │   │   │   ├── selection
+│       │   │   │   ├── types
+│       │   │   │   ├── util
+│       │   │   │   │   ├── cache
+│       │   │   │   │   ├── clock
+│       │   │   │   │   ├── diff
+│       │   │   │   │   ├── errors
+│       │   │   │   │   ├── framer
+│       │   │   │   │   ├── intstr
+│       │   │   │   │   ├── json
+│       │   │   │   │   ├── mergepatch
+│       │   │   │   │   ├── naming
+│       │   │   │   │   ├── net
+│       │   │   │   │   ├── runtime
+│       │   │   │   │   ├── sets
+│       │   │   │   │   ├── strategicpatch
+│       │   │   │   │   ├── validation
+│       │   │   │   │   │   └── field
+│       │   │   │   │   ├── wait
+│       │   │   │   │   └── yaml
+│       │   │   │   ├── version
+│       │   │   │   └── watch
+│       │   │   └── third_party
+│       │   │       └── forked
+│       │   │           └── golang
+│       │   │               ├── json
+│       │   │               └── reflect
+│       │   ├── client-go
+│       │   │   ├── discovery
+│       │   │   │   └── fake
+│       │   │   ├── kubernetes
+│       │   │   │   ├── fake
+│       │   │   │   ├── scheme
+│       │   │   │   └── typed
+│       │   │   │       ├── admissionregistration
+│       │   │   │       │   ├── v1
+│       │   │   │       │   │   └── fake
+│       │   │   │       │   └── v1beta1
+│       │   │   │       │       └── fake
+│       │   │   │       ├── apps
+│       │   │   │       │   ├── v1
+│       │   │   │       │   │   └── fake
+│       │   │   │       │   ├── v1beta1
+│       │   │   │       │   │   └── fake
+│       │   │   │       │   └── v1beta2
+│       │   │   │       │       └── fake
+│       │   │   │       ├── auditregistration
+│       │   │   │       │   └── v1alpha1
+│       │   │   │       │       └── fake
+│       │   │   │       ├── authentication
+│       │   │   │       │   ├── v1
+│       │   │   │       │   │   └── fake
+│       │   │   │       │   └── v1beta1
+│       │   │   │       │       └── fake
+│       │   │   │       ├── authorization
+│       │   │   │       │   ├── v1
+│       │   │   │       │   │   └── fake
+│       │   │   │       │   └── v1beta1
+│       │   │   │       │       └── fake
+│       │   │   │       ├── autoscaling
+│       │   │   │       │   ├── v1
+│       │   │   │       │   │   └── fake
+│       │   │   │       │   ├── v2beta1
+│       │   │   │       │   │   └── fake
+│       │   │   │       │   └── v2beta2
+│       │   │   │       │       └── fake
+│       │   │   │       ├── batch
+│       │   │   │       │   ├── v1
+│       │   │   │       │   │   └── fake
+│       │   │   │       │   ├── v1beta1
+│       │   │   │       │   │   └── fake
+│       │   │   │       │   └── v2alpha1
+│       │   │   │       │       └── fake
+│       │   │   │       ├── certificates
+│       │   │   │       │   └── v1beta1
+│       │   │   │       │       └── fake
+│       │   │   │       ├── coordination
+│       │   │   │       │   ├── v1
+│       │   │   │       │   │   └── fake
+│       │   │   │       │   └── v1beta1
+│       │   │   │       │       └── fake
+│       │   │   │       ├── core
+│       │   │   │       │   └── v1
+│       │   │   │       │       └── fake
+│       │   │   │       ├── discovery
+│       │   │   │       │   └── v1alpha1
+│       │   │   │       │       └── fake
+│       │   │   │       ├── events
+│       │   │   │       │   └── v1beta1
+│       │   │   │       │       └── fake
+│       │   │   │       ├── extensions
+│       │   │   │       │   └── v1beta1
+│       │   │   │       │       └── fake
+│       │   │   │       ├── networking
+│       │   │   │       │   ├── v1
+│       │   │   │       │   │   └── fake
+│       │   │   │       │   └── v1beta1
+│       │   │   │       │       └── fake
+│       │   │   │       ├── node
+│       │   │   │       │   ├── v1alpha1
+│       │   │   │       │   │   └── fake
+│       │   │   │       │   └── v1beta1
+│       │   │   │       │       └── fake
+│       │   │   │       ├── policy
+│       │   │   │       │   └── v1beta1
+│       │   │   │       │       └── fake
+│       │   │   │       ├── rbac
+│       │   │   │       │   ├── v1
+│       │   │   │       │   │   └── fake
+│       │   │   │       │   ├── v1alpha1
+│       │   │   │       │   │   └── fake
+│       │   │   │       │   └── v1beta1
+│       │   │   │       │       └── fake
+│       │   │   │       ├── scheduling
+│       │   │   │       │   ├── v1
+│       │   │   │       │   │   └── fake
+│       │   │   │       │   ├── v1alpha1
+│       │   │   │       │   │   └── fake
+│       │   │   │       │   └── v1beta1
+│       │   │   │       │       └── fake
+│       │   │   │       ├── settings
+│       │   │   │       │   └── v1alpha1
+│       │   │   │       │       └── fake
+│       │   │   │       └── storage
+│       │   │   │           ├── v1
+│       │   │   │           │   └── fake
+│       │   │   │           ├── v1alpha1
+│       │   │   │           │   └── fake
+│       │   │   │           └── v1beta1
+│       │   │   │               └── fake
+│       │   │   ├── pkg
+│       │   │   │   ├── apis
+│       │   │   │   │   └── clientauthentication
+│       │   │   │   │       ├── v1alpha1
+│       │   │   │   │       └── v1beta1
+│       │   │   │   └── version
+│       │   │   ├── plugin
+│       │   │   │   └── pkg
+│       │   │   │       └── client
+│       │   │   │           └── auth
+│       │   │   │               ├── exec
+│       │   │   │               └── gcp
+│       │   │   ├── rest
+│       │   │   │   └── watch
+│       │   │   ├── testing
+│       │   │   ├── third_party
+│       │   │   │   └── forked
+│       │   │   │       └── golang
+│       │   │   │           └── template
+│       │   │   ├── tools
+│       │   │   │   ├── auth
+│       │   │   │   ├── cache
+│       │   │   │   ├── clientcmd
+│       │   │   │   │   └── api
+│       │   │   │   │       ├── latest
+│       │   │   │   │       └── v1
+│       │   │   │   ├── metrics
+│       │   │   │   ├── pager
+│       │   │   │   └── reference
+│       │   │   ├── transport
+│       │   │   └── util
+│       │   │       ├── cert
+│       │   │       ├── connrotation
+│       │   │       ├── flowcontrol
+│       │   │       ├── homedir
+│       │   │       ├── jsonpath
+│       │   │       ├── keyutil
+│       │   │       └── retry
+│       │   ├── klog
+│       │   ├── kube-openapi
+│       │   │   └── pkg
+│       │   │       └── util
+│       │   │           └── proto
+│       │   └── utils
+│       │       ├── buffer
+│       │       ├── integer
+│       │       └── trace
+│       └── sigs.k8s.io
+│           └── yaml
+├── engine
+│   ├── api
+│   │   ├── server
+│   │   │   ├── backend
+│   │   │   │   └── build
+│   │   │   ├── httputils
+│   │   │   ├── middleware
+│   │   │   └── router
+│   │   │       ├── build
+│   │   │       ├── checkpoint
+│   │   │       ├── container
+│   │   │       ├── debug
+│   │   │       ├── distribution
+│   │   │       ├── grpc
+│   │   │       ├── image
+│   │   │       ├── network
+│   │   │       ├── plugin
+│   │   │       ├── session
+│   │   │       ├── swarm
+│   │   │       ├── system
+│   │   │       └── volume
+│   │   ├── templates
+│   │   │   └── server
+│   │   └── types
+│   │       ├── backend
+│   │       ├── blkiodev
+│   │       ├── container
+│   │       ├── events
+│   │       ├── filters
+│   │       ├── image
+│   │       ├── mount
+│   │       ├── network
+│   │       ├── plugins
+│   │       │   └── logdriver
+│   │       ├── registry
+│   │       ├── strslice
+│   │       ├── swarm
+│   │       │   └── runtime
+│   │       ├── time
+│   │       ├── versions
+│   │       │   ├── v1p19
+│   │       │   └── v1p20
+│   │       └── volume
+│   ├── builder
+│   │   ├── builder-next
+│   │   │   ├── adapters
+│   │   │   │   ├── containerimage
+│   │   │   │   ├── localinlinecache
+│   │   │   │   └── snapshot
+│   │   │   ├── exporter
+│   │   │   ├── imagerefchecker
+│   │   │   └── worker
+│   │   ├── dockerfile
+│   │   ├── dockerignore
+│   │   └── remotecontext
+│   │       └── git
+│   ├── cli
+│   │   ├── config
+│   │   └── debug
+│   ├── client
+│   │   └── testdata
+│   ├── cmd
+│   │   └── dockerd
+│   ├── container
+│   │   └── stream
+│   ├── contrib
+│   │   ├── apparmor
+│   │   ├── busybox
+│   │   ├── docker-device-tool
+│   │   ├── gitdm
+│   │   ├── httpserver
+│   │   ├── init
+│   │   │   ├── openrc
+│   │   │   ├── systemd
+│   │   │   ├── sysvinit-debian
+│   │   │   ├── sysvinit-redhat
+│   │   │   └── upstart
+│   │   ├── nnp-test
+│   │   ├── syntax
+│   │   │   ├── nano
+│   │   │   ├── textmate
+│   │   │   │   └── Docker.tmbundle
+│   │   │   │       ├── Preferences
+│   │   │   │       └── Syntaxes
+│   │   │   └── vim
+│   │   ├── syscall-test
+│   │   └── udev
+│   ├── daemon
+│   │   ├── cluster
+│   │   │   ├── controllers
+│   │   │   │   └── plugin
+│   │   │   ├── convert
+│   │   │   ├── executor
+│   │   │   │   └── container
+│   │   │   └── provider
+│   │   ├── config
+│   │   ├── discovery
+│   │   ├── events
+│   │   │   └── testutils
+│   │   ├── exec
+│   │   ├── graphdriver
+│   │   │   ├── aufs
+│   │   │   ├── btrfs
+│   │   │   ├── copy
+│   │   │   ├── devmapper
+│   │   │   ├── fuse-overlayfs
+│   │   │   ├── graphtest
+│   │   │   ├── lcow
+│   │   │   ├── overlay
+│   │   │   ├── overlay2
+│   │   │   ├── overlayutils
+│   │   │   ├── register
+│   │   │   ├── vfs
+│   │   │   ├── windows
+│   │   │   └── zfs
+│   │   ├── images
+│   │   ├── initlayer
+│   │   ├── links
+│   │   ├── listeners
+│   │   ├── logger
+│   │   │   ├── awslogs
+│   │   │   ├── etwlogs
+│   │   │   ├── fluentd
+│   │   │   ├── gcplogs
+│   │   │   ├── gelf
+│   │   │   ├── journald
+│   │   │   ├── jsonfilelog
+│   │   │   │   └── jsonlog
+│   │   │   ├── local
+│   │   │   ├── logentries
+│   │   │   ├── loggerutils
+│   │   │   │   └── cache
+│   │   │   ├── splunk
+│   │   │   ├── syslog
+│   │   │   └── templates
+│   │   ├── names
+│   │   ├── network
+│   │   ├── stats
+│   │   └── testdata
+│   ├── distribution
+│   │   ├── fixtures
+│   │   │   └── validate_manifest
+│   │   ├── metadata
+│   │   ├── utils
+│   │   └── xfer
+│   ├── dockerversion
+│   ├── docs
+│   │   ├── api
+│   │   ├── contributing
+│   │   │   └── images
+│   │   └── static_files
+│   ├── errdefs
+│   ├── hack
+│   │   ├── ci
+│   │   ├── dockerfile
+│   │   │   └── install
+│   │   ├── make
+│   │   ├── test
+│   │   └── validate
+│   ├── image
+│   │   ├── cache
+│   │   ├── spec
+│   │   ├── tarexport
+│   │   └── v1
+│   ├── integration
+│   │   ├── build
+│   │   │   └── testdata
+│   │   ├── config
+│   │   ├── container
+│   │   ├── distribution
+│   │   ├── image
+│   │   ├── internal
+│   │   │   ├── container
+│   │   │   ├── network
+│   │   │   ├── requirement
+│   │   │   └── swarm
+│   │   ├── network
+│   │   │   ├── ipvlan
+│   │   │   └── macvlan
+│   │   ├── plugin
+│   │   │   ├── authz
+│   │   │   ├── common
+│   │   │   ├── graphdriver
+│   │   │   ├── logging
+│   │   │   │   └── cmd
+│   │   │   │       ├── close_on_start
+│   │   │   │       ├── discard
+│   │   │   │       └── dummy
+│   │   │   └── volumes
+│   │   │       └── cmd
+│   │   │           └── dummy
+│   │   ├── secret
+│   │   ├── service
+│   │   ├── session
+│   │   ├── system
+│   │   ├── testdata
+│   │   │   └── https
+│   │   └── volume
+│   ├── integration-cli
+│   │   ├── checker
+│   │   ├── cli
+│   │   │   └── build
+│   │   ├── daemon
+│   │   ├── environment
+│   │   ├── fixtures
+│   │   │   ├── auth
+│   │   │   ├── credentialspecs
+│   │   │   ├── https
+│   │   │   └── registry
+│   │   ├── requirement
+│   │   └── testdata
+│   ├── internal
+│   │   └── test
+│   │       └── suite
+│   ├── layer
+│   ├── libcontainerd
+│   │   ├── local
+│   │   ├── queue
+│   │   ├── remote
+│   │   ├── supervisor
+│   │   └── types
+│   ├── oci
+│   │   ├── caps
+│   │   └── fixtures
+│   ├── opts
+│   ├── patches
+│   ├── pkg
+│   │   ├── aaparser
+│   │   ├── archive
+│   │   │   └── testdata
+│   │   ├── authorization
+│   │   ├── broadcaster
+│   │   ├── capabilities
+│   │   ├── chrootarchive
+│   │   ├── containerfs
+│   │   ├── devicemapper
+│   │   ├── directory
+│   │   ├── discovery
+│   │   │   ├── file
+│   │   │   ├── kv
+│   │   │   ├── memory
+│   │   │   └── nodes
+│   │   ├── dmesg
+│   │   ├── filenotify
+│   │   ├── fileutils
+│   │   ├── fsutils
+│   │   ├── homedir
+│   │   ├── idtools
+│   │   ├── ioutils
+│   │   ├── jsonmessage
+│   │   ├── locker
+│   │   ├── longpath
+│   │   ├── loopback
+│   │   ├── mount
+│   │   ├── namesgenerator
+│   │   │   └── cmd
+│   │   │       └── names-generator
+│   │   ├── parsers
+│   │   │   ├── kernel
+│   │   │   └── operatingsystem
+│   │   ├── pidfile
+│   │   ├── platform
+│   │   ├── plugingetter
+│   │   ├── plugins
+│   │   │   ├── pluginrpc-gen
+│   │   │   │   └── fixtures
+│   │   │   │       └── otherfixture
+│   │   │   └── transport
+│   │   ├── pools
+│   │   ├── progress
+│   │   ├── pubsub
+│   │   ├── reexec
+│   │   ├── signal
+│   │   │   └── testfiles
+│   │   ├── stdcopy
+│   │   ├── streamformatter
+│   │   ├── stringid
+│   │   ├── symlink
+│   │   ├── sysinfo
+│   │   ├── system
+│   │   ├── tailfile
+│   │   ├── tarsum
+│   │   │   └── testdata
+│   │   │       ├── 46af0962ab5afeb5ce6740d4d91652e69206fc991fd5328c1a94d364ad00e457
+│   │   │       ├── 511136ea3c5a64f264b78b5433614aec563103b4d4702f3ba7d4d2698e22c158
+│   │   │       ├── collision
+│   │   │       └── xattr
+│   │   ├── term
+│   │   │   └── windows
+│   │   ├── truncindex
+│   │   ├── urlutil
+│   │   └── useragent
+│   ├── plugin
+│   │   ├── executor
+│   │   │   └── containerd
+│   │   └── v2
+│   ├── profiles
+│   │   ├── apparmor
+│   │   └── seccomp
+│   │       └── fixtures
+│   ├── project
+│   ├── quota
+│   ├── reference
+│   ├── registry
+│   │   └── resumable
+│   ├── reports
+│   │   └── builder
+│   ├── restartmanager
+│   ├── rootless
+│   │   └── specconv
+│   ├── runconfig
+│   │   ├── fixtures
+│   │   │   ├── unix
+│   │   │   └── windows
+│   │   └── opts
+│   ├── testutil
+│   │   ├── daemon
+│   │   ├── environment
+│   │   ├── fakecontext
+│   │   ├── fakegit
+│   │   ├── fakestorage
+│   │   ├── fixtures
+│   │   │   ├── load
+│   │   │   └── plugin
+│   │   │       └── basic
+│   │   ├── registry
+│   │   └── request
+│   ├── vendor
+│   │   ├── archive
+│   │   │   └── tar
+│   │   │       └── testdata
+│   │   ├── cloud.google.com
+│   │   │   └── go
+│   │   │       ├── cmd
+│   │   │       │   └── go-cloud-debug-agent
+│   │   │       │       └── internal
+│   │   │       │           └── debug
+│   │   │       │               └── gosym
+│   │   │       ├── compute
+│   │   │       │   └── metadata
+│   │   │       ├── internal
+│   │   │       │   └── version
+│   │   │       └── logging
+│   │   │           ├── apiv2
+│   │   │           └── internal
+│   │   ├── code.cloudfoundry.org
+│   │   │   └── clock
+│   │   ├── github.com
+│   │   │   ├── Azure
+│   │   │   │   └── go-ansiterm
+│   │   │   │       └── winterm
+│   │   │   ├── BurntSushi
+│   │   │   │   └── toml
+│   │   │   ├── Graylog2
+│   │   │   │   └── go-gelf
+│   │   │   │       └── gelf
+│   │   │   ├── Microsoft
+│   │   │   │   ├── go-winio
+│   │   │   │   │   ├── backuptar
+│   │   │   │   │   ├── pkg
+│   │   │   │   │   │   ├── etw
+│   │   │   │   │   │   ├── etwlogrus
+│   │   │   │   │   │   ├── guid
+│   │   │   │   │   │   └── security
+│   │   │   │   │   └── vhd
+│   │   │   │   ├── hcsshim
+│   │   │   │   │   ├── cmd
+│   │   │   │   │   │   └── containerd-shim-runhcs-v1
+│   │   │   │   │   │       └── options
+│   │   │   │   │   ├── ext4
+│   │   │   │   │   │   ├── internal
+│   │   │   │   │   │   │   ├── compactext4
+│   │   │   │   │   │   │   └── format
+│   │   │   │   │   │   └── tar2ext4
+│   │   │   │   │   ├── internal
+│   │   │   │   │   │   ├── cow
+│   │   │   │   │   │   ├── hcs
+│   │   │   │   │   │   ├── hcserror
+│   │   │   │   │   │   ├── hns
+│   │   │   │   │   │   ├── interop
+│   │   │   │   │   │   ├── log
+│   │   │   │   │   │   ├── logfields
+│   │   │   │   │   │   ├── longpath
+│   │   │   │   │   │   ├── mergemaps
+│   │   │   │   │   │   ├── oc
+│   │   │   │   │   │   ├── safefile
+│   │   │   │   │   │   ├── schema1
+│   │   │   │   │   │   ├── schema2
+│   │   │   │   │   │   ├── timeout
+│   │   │   │   │   │   ├── vmcompute
+│   │   │   │   │   │   └── wclayer
+│   │   │   │   │   └── osversion
+│   │   │   │   └── opengcs
+│   │   │   │       ├── client
+│   │   │   │       ├── init
+│   │   │   │       ├── service
+│   │   │   │       │   └── gcsutils
+│   │   │   │       │       └── remotefs
+│   │   │   │       └── vsockexec
+│   │   │   ├── RackSec
+│   │   │   │   └── srslog
+│   │   │   ├── armon
+│   │   │   │   ├── go-metrics
+│   │   │   │   └── go-radix
+│   │   │   ├── aws
+│   │   │   │   └── aws-sdk-go
+│   │   │   │       ├── aws
+│   │   │   │       │   ├── awserr
+│   │   │   │       │   ├── awsutil
+│   │   │   │       │   ├── client
+│   │   │   │       │   │   └── metadata
+│   │   │   │       │   ├── corehandlers
+│   │   │   │       │   ├── credentials
+│   │   │   │       │   │   ├── ec2rolecreds
+│   │   │   │       │   │   ├── endpointcreds
+│   │   │   │       │   │   ├── processcreds
+│   │   │   │       │   │   └── stscreds
+│   │   │   │       │   ├── csm
+│   │   │   │       │   ├── defaults
+│   │   │   │       │   ├── ec2metadata
+│   │   │   │       │   ├── endpoints
+│   │   │   │       │   ├── request
+│   │   │   │       │   ├── session
+│   │   │   │       │   └── signer
+│   │   │   │       │       └── v4
+│   │   │   │       ├── internal
+│   │   │   │       │   ├── ini
+│   │   │   │       │   ├── sdkio
+│   │   │   │       │   ├── sdkmath
+│   │   │   │       │   ├── sdkrand
+│   │   │   │       │   ├── sdkuri
+│   │   │   │       │   ├── shareddefaults
+│   │   │   │       │   └── strings
+│   │   │   │       ├── private
+│   │   │   │       │   └── protocol
+│   │   │   │       │       ├── json
+│   │   │   │       │       │   └── jsonutil
+│   │   │   │       │       ├── jsonrpc
+│   │   │   │       │       ├── query
+│   │   │   │       │       │   └── queryutil
+│   │   │   │       │       ├── rest
+│   │   │   │       │       └── xml
+│   │   │   │       │           └── xmlutil
+│   │   │   │       └── service
+│   │   │   │           ├── cloudwatchlogs
+│   │   │   │           └── sts
+│   │   │   │               └── stsiface
+│   │   │   ├── beorn7
+│   │   │   │   └── perks
+│   │   │   │       └── quantile
+│   │   │   ├── bsphere
+│   │   │   │   └── le_go
+│   │   │   ├── cespare
+│   │   │   │   └── xxhash
+│   │   │   │       └── v2
+│   │   │   ├── cilium
+│   │   │   │   └── ebpf
+│   │   │   │       ├── asm
+│   │   │   │       └── internal
+│   │   │   │           ├── btf
+│   │   │   │           └── unix
+│   │   │   ├── cloudflare
+│   │   │   │   └── cfssl
+│   │   │   │       ├── api
+│   │   │   │       ├── auth
+│   │   │   │       ├── certdb
+│   │   │   │       ├── config
+│   │   │   │       ├── crypto
+│   │   │   │       │   └── pkcs7
+│   │   │   │       ├── csr
+│   │   │   │       ├── errors
+│   │   │   │       ├── helpers
+│   │   │   │       │   └── derhelpers
+│   │   │   │       ├── info
+│   │   │   │       ├── initca
+│   │   │   │       ├── log
+│   │   │   │       ├── ocsp
+│   │   │   │       │   └── config
+│   │   │   │       └── signer
+│   │   │   │           └── local
+│   │   │   ├── containerd
+│   │   │   │   ├── cgroups
+│   │   │   │   │   ├── stats
+│   │   │   │   │   │   └── v1
+│   │   │   │   │   └── v2
+│   │   │   │   │       └── stats
+│   │   │   │   ├── console
+│   │   │   │   ├── containerd
+│   │   │   │   │   ├── api
+│   │   │   │   │   │   ├── events
+│   │   │   │   │   │   ├── services
+│   │   │   │   │   │   │   ├── containers
+│   │   │   │   │   │   │   │   └── v1
+│   │   │   │   │   │   │   ├── content
+│   │   │   │   │   │   │   │   └── v1
+│   │   │   │   │   │   │   ├── diff
+│   │   │   │   │   │   │   │   └── v1
+│   │   │   │   │   │   │   ├── events
+│   │   │   │   │   │   │   │   └── v1
+│   │   │   │   │   │   │   ├── images
+│   │   │   │   │   │   │   │   └── v1
+│   │   │   │   │   │   │   ├── introspection
+│   │   │   │   │   │   │   │   └── v1
+│   │   │   │   │   │   │   ├── leases
+│   │   │   │   │   │   │   │   └── v1
+│   │   │   │   │   │   │   ├── namespaces
+│   │   │   │   │   │   │   │   └── v1
+│   │   │   │   │   │   │   ├── snapshots
+│   │   │   │   │   │   │   │   └── v1
+│   │   │   │   │   │   │   ├── tasks
+│   │   │   │   │   │   │   │   └── v1
+│   │   │   │   │   │   │   └── version
+│   │   │   │   │   │   │       └── v1
+│   │   │   │   │   │   └── types
+│   │   │   │   │   │       └── task
+│   │   │   │   │   ├── archive
+│   │   │   │   │   │   └── compression
+│   │   │   │   │   ├── cio
+│   │   │   │   │   ├── containers
+│   │   │   │   │   ├── content
+│   │   │   │   │   │   ├── local
+│   │   │   │   │   │   └── proxy
+│   │   │   │   │   ├── contrib
+│   │   │   │   │   │   └── nvidia
+│   │   │   │   │   ├── defaults
+│   │   │   │   │   ├── diff
+│   │   │   │   │   ├── errdefs
+│   │   │   │   │   ├── events
+│   │   │   │   │   │   └── exchange
+│   │   │   │   │   ├── filters
+│   │   │   │   │   ├── gc
+│   │   │   │   │   ├── identifiers
+│   │   │   │   │   ├── images
+│   │   │   │   │   │   └── archive
+│   │   │   │   │   ├── labels
+│   │   │   │   │   ├── leases
+│   │   │   │   │   │   └── proxy
+│   │   │   │   │   ├── log
+│   │   │   │   │   ├── metadata
+│   │   │   │   │   │   └── boltutil
+│   │   │   │   │   ├── mount
+│   │   │   │   │   ├── namespaces
+│   │   │   │   │   ├── oci
+│   │   │   │   │   ├── pkg
+│   │   │   │   │   │   ├── dialer
+│   │   │   │   │   │   ├── process
+│   │   │   │   │   │   └── stdio
+│   │   │   │   │   ├── platforms
+│   │   │   │   │   ├── plugin
+│   │   │   │   │   ├── reference
+│   │   │   │   │   │   └── docker
+│   │   │   │   │   ├── remotes
+│   │   │   │   │   │   ├── docker
+│   │   │   │   │   │   │   ├── auth
+│   │   │   │   │   │   │   └── schema1
+│   │   │   │   │   │   └── errors
+│   │   │   │   │   ├── rootfs
+│   │   │   │   │   ├── runtime
+│   │   │   │   │   │   ├── linux
+│   │   │   │   │   │   │   └── runctypes
+│   │   │   │   │   │   ├── v1
+│   │   │   │   │   │   │   ├── linux
+│   │   │   │   │   │   │   └── shim
+│   │   │   │   │   │   │       ├── client
+│   │   │   │   │   │   │       └── v1
+│   │   │   │   │   │   └── v2
+│   │   │   │   │   │       └── runc
+│   │   │   │   │   │           └── options
+│   │   │   │   │   ├── services
+│   │   │   │   │   │   ├── content
+│   │   │   │   │   │   │   └── contentserver
+│   │   │   │   │   │   ├── introspection
+│   │   │   │   │   │   └── server
+│   │   │   │   │   │       └── config
+│   │   │   │   │   ├── snapshots
+│   │   │   │   │   │   └── proxy
+│   │   │   │   │   ├── sys
+│   │   │   │   │   │   └── reaper
+│   │   │   │   │   └── version
+│   │   │   │   ├── continuity
+│   │   │   │   │   ├── devices
+│   │   │   │   │   ├── driver
+│   │   │   │   │   ├── fs
+│   │   │   │   │   ├── pathdriver
+│   │   │   │   │   └── sysx
+│   │   │   │   ├── fifo
+│   │   │   │   ├── go-runc
+│   │   │   │   ├── ttrpc
+│   │   │   │   └── typeurl
+│   │   │   ├── coreos
+│   │   │   │   ├── etcd
+│   │   │   │   │   ├── client
+│   │   │   │   │   ├── pkg
+│   │   │   │   │   │   ├── crc
+│   │   │   │   │   │   ├── fileutil
+│   │   │   │   │   │   ├── idutil
+│   │   │   │   │   │   ├── ioutil
+│   │   │   │   │   │   ├── pathutil
+│   │   │   │   │   │   ├── pbutil
+│   │   │   │   │   │   ├── srv
+│   │   │   │   │   │   └── types
+│   │   │   │   │   ├── raft
+│   │   │   │   │   │   └── raftpb
+│   │   │   │   │   ├── snap
+│   │   │   │   │   │   └── snappb
+│   │   │   │   │   ├── version
+│   │   │   │   │   └── wal
+│   │   │   │   │       └── walpb
+│   │   │   │   ├── go-semver
+│   │   │   │   │   └── semver
+│   │   │   │   ├── go-systemd
+│   │   │   │   │   ├── journal
+│   │   │   │   │   └── v22
+│   │   │   │   │       ├── activation
+│   │   │   │   │       ├── daemon
+│   │   │   │   │       ├── dbus
+│   │   │   │   │       └── journal
+│   │   │   │   └── pkg
+│   │   │   │       └── capnslog
+│   │   │   ├── creack
+│   │   │   │   └── pty
+│   │   │   ├── cyphar
+│   │   │   │   └── filepath-securejoin
+│   │   │   ├── deckarep
+│   │   │   │   └── golang-set
+│   │   │   ├── docker
+│   │   │   │   ├── distribution
+│   │   │   │   │   ├── digestset
+│   │   │   │   │   ├── manifest
+│   │   │   │   │   │   ├── manifestlist
+│   │   │   │   │   │   ├── ocischema
+│   │   │   │   │   │   ├── schema1
+│   │   │   │   │   │   └── schema2
+│   │   │   │   │   ├── metrics
+│   │   │   │   │   ├── reference
+│   │   │   │   │   └── registry
+│   │   │   │   │       ├── api
+│   │   │   │   │       │   ├── errcode
+│   │   │   │   │       │   └── v2
+│   │   │   │   │       ├── client
+│   │   │   │   │       │   ├── auth
+│   │   │   │   │       │   │   └── challenge
+│   │   │   │   │       │   └── transport
+│   │   │   │   │       └── storage
+│   │   │   │   │           └── cache
+│   │   │   │   │               └── memory
+│   │   │   │   ├── go-connections
+│   │   │   │   │   ├── nat
+│   │   │   │   │   ├── sockets
+│   │   │   │   │   └── tlsconfig
+│   │   │   │   ├── go-events
+│   │   │   │   ├── go-metrics
+│   │   │   │   ├── go-units
+│   │   │   │   ├── libkv
+│   │   │   │   │   └── store
+│   │   │   │   │       ├── boltdb
+│   │   │   │   │       ├── consul
+│   │   │   │   │       ├── etcd
+│   │   │   │   │       └── zookeeper
+│   │   │   │   ├── libnetwork
+│   │   │   │   │   ├── bitseq
+│   │   │   │   │   ├── cluster
+│   │   │   │   │   ├── config
+│   │   │   │   │   ├── datastore
+│   │   │   │   │   ├── diagnostic
+│   │   │   │   │   ├── discoverapi
+│   │   │   │   │   ├── driverapi
+│   │   │   │   │   ├── drivers
+│   │   │   │   │   │   ├── bridge
+│   │   │   │   │   │   │   └── brmanager
+│   │   │   │   │   │   ├── host
+│   │   │   │   │   │   ├── ipvlan
+│   │   │   │   │   │   │   └── ivmanager
+│   │   │   │   │   │   ├── macvlan
+│   │   │   │   │   │   │   └── mvmanager
+│   │   │   │   │   │   ├── null
+│   │   │   │   │   │   ├── overlay
+│   │   │   │   │   │   │   ├── overlayutils
+│   │   │   │   │   │   │   └── ovmanager
+│   │   │   │   │   │   ├── remote
+│   │   │   │   │   │   │   └── api
+│   │   │   │   │   │   └── windows
+│   │   │   │   │   │       └── overlay
+│   │   │   │   │   ├── drvregistry
+│   │   │   │   │   ├── etchosts
+│   │   │   │   │   ├── hostdiscovery
+│   │   │   │   │   ├── idm
+│   │   │   │   │   ├── internal
+│   │   │   │   │   │   ├── caller
+│   │   │   │   │   │   └── setmatrix
+│   │   │   │   │   ├── ipam
+│   │   │   │   │   ├── ipamapi
+│   │   │   │   │   ├── ipams
+│   │   │   │   │   │   ├── builtin
+│   │   │   │   │   │   ├── null
+│   │   │   │   │   │   ├── remote
+│   │   │   │   │   │   │   └── api
+│   │   │   │   │   │   └── windowsipam
+│   │   │   │   │   ├── ipamutils
+│   │   │   │   │   ├── iptables
+│   │   │   │   │   ├── netlabel
+│   │   │   │   │   ├── netutils
+│   │   │   │   │   ├── networkdb
+│   │   │   │   │   ├── ns
+│   │   │   │   │   ├── options
+│   │   │   │   │   ├── osl
+│   │   │   │   │   │   └── kernel
+│   │   │   │   │   ├── portallocator
+│   │   │   │   │   ├── portmapper
+│   │   │   │   │   ├── resolvconf
+│   │   │   │   │   │   └── dns
+│   │   │   │   │   └── types
+│   │   │   │   ├── libtrust
+│   │   │   │   └── swarmkit
+│   │   │   │       ├── agent
+│   │   │   │       │   ├── configs
+│   │   │   │       │   ├── exec
+│   │   │   │       │   └── secrets
+│   │   │   │       ├── api
+│   │   │   │       │   ├── deepcopy
+│   │   │   │       │   ├── defaults
+│   │   │   │       │   ├── equality
+│   │   │   │       │   ├── genericresource
+│   │   │   │       │   ├── naming
+│   │   │   │       │   └── validation
+│   │   │   │       ├── ca
+│   │   │   │       │   ├── keyutils
+│   │   │   │       │   └── pkcs8
+│   │   │   │       ├── connectionbroker
+│   │   │   │       ├── identity
+│   │   │   │       ├── ioutils
+│   │   │   │       ├── log
+│   │   │   │       ├── manager
+│   │   │   │       │   ├── allocator
+│   │   │   │       │   │   ├── cnmallocator
+│   │   │   │       │   │   └── networkallocator
+│   │   │   │       │   ├── constraint
+│   │   │   │       │   ├── controlapi
+│   │   │   │       │   ├── dispatcher
+│   │   │   │       │   │   └── heartbeat
+│   │   │   │       │   ├── drivers
+│   │   │   │       │   ├── encryption
+│   │   │   │       │   ├── health
+│   │   │   │       │   ├── keymanager
+│   │   │   │       │   ├── logbroker
+│   │   │   │       │   ├── metrics
+│   │   │   │       │   ├── orchestrator
+│   │   │   │       │   │   ├── constraintenforcer
+│   │   │   │       │   │   ├── global
+│   │   │   │       │   │   ├── jobs
+│   │   │   │       │   │   │   ├── global
+│   │   │   │       │   │   │   └── replicated
+│   │   │   │       │   │   ├── replicated
+│   │   │   │       │   │   ├── restart
+│   │   │   │       │   │   ├── taskinit
+│   │   │   │       │   │   ├── taskreaper
+│   │   │   │       │   │   └── update
+│   │   │   │       │   ├── raftselector
+│   │   │   │       │   ├── resourceapi
+│   │   │   │       │   ├── scheduler
+│   │   │   │       │   ├── state
+│   │   │   │       │   │   ├── raft
+│   │   │   │       │   │   │   ├── membership
+│   │   │   │       │   │   │   ├── storage
+│   │   │   │       │   │   │   └── transport
+│   │   │   │       │   │   └── store
+│   │   │   │       │   └── watchapi
+│   │   │   │       ├── node
+│   │   │   │       ├── protobuf
+│   │   │   │       │   ├── plugin
+│   │   │   │       │   └── ptypes
+│   │   │   │       ├── remotes
+│   │   │   │       ├── template
+│   │   │   │       ├── watch
+│   │   │   │       │   └── queue
+│   │   │   │       └── xnet
+│   │   │   ├── fernet
+│   │   │   │   └── fernet-go
+│   │   │   ├── fluent
+│   │   │   │   └── fluent-logger-golang
+│   │   │   │       └── fluent
+│   │   │   ├── fsnotify
+│   │   │   │   └── fsnotify
+│   │   │   ├── godbus
+│   │   │   │   └── dbus
+│   │   │   │       └── v5
+│   │   │   ├── gofrs
+│   │   │   │   └── flock
+│   │   │   ├── gogo
+│   │   │   │   ├── googleapis
+│   │   │   │   │   └── google
+│   │   │   │   │       └── rpc
+│   │   │   │   └── protobuf
+│   │   │   │       ├── gogoproto
+│   │   │   │       ├── io
+│   │   │   │       ├── proto
+│   │   │   │       ├── protobuf
+│   │   │   │       │   └── google
+│   │   │   │       │       └── protobuf
+│   │   │   │       │           └── compiler
+│   │   │   │       ├── protoc-gen-gogo
+│   │   │   │       │   └── descriptor
+│   │   │   │       ├── sortkeys
+│   │   │   │       ├── test
+│   │   │   │       │   └── issue270
+│   │   │   │       │       ├── a
+│   │   │   │       │       └── b
+│   │   │   │       └── types
+│   │   │   ├── golang
+│   │   │   │   ├── gddo
+│   │   │   │   │   └── httputil
+│   │   │   │   │       └── header
+│   │   │   │   ├── groupcache
+│   │   │   │   │   └── lru
+│   │   │   │   └── protobuf
+│   │   │   │       ├── jsonpb
+│   │   │   │       ├── proto
+│   │   │   │       ├── protoc-gen-go
+│   │   │   │       │   ├── descriptor
+│   │   │   │       │   ├── generator
+│   │   │   │       │   │   └── internal
+│   │   │   │       │   │       └── remap
+│   │   │   │       │   ├── grpc
+│   │   │   │       │   └── plugin
+│   │   │   │       └── ptypes
+│   │   │   │           ├── any
+│   │   │   │           ├── duration
+│   │   │   │           ├── empty
+│   │   │   │           ├── struct
+│   │   │   │           └── timestamp
+│   │   │   ├── google
+│   │   │   │   ├── certificate-transparency-go
+│   │   │   │   │   ├── asn1
+│   │   │   │   │   ├── client
+│   │   │   │   │   │   └── configpb
+│   │   │   │   │   ├── jsonclient
+│   │   │   │   │   ├── tls
+│   │   │   │   │   └── x509
+│   │   │   │   │       └── pkix
+│   │   │   │   ├── go-cmp
+│   │   │   │   │   └── cmp
+│   │   │   │   │       ├── cmpopts
+│   │   │   │   │       └── internal
+│   │   │   │   │           ├── diff
+│   │   │   │   │           ├── function
+│   │   │   │   │           └── value
+│   │   │   │   ├── shlex
+│   │   │   │   └── uuid
+│   │   │   ├── googleapis
+│   │   │   │   └── gax-go
+│   │   │   │       └── v2
+│   │   │   ├── gorilla
+│   │   │   │   └── mux
+│   │   │   ├── grpc-ecosystem
+│   │   │   │   ├── go-grpc-middleware
+│   │   │   │   ├── go-grpc-prometheus
+│   │   │   │   └── grpc-opentracing
+│   │   │   │       ├── go
+│   │   │   │       │   └── otgrpc
+│   │   │   │       └── python
+│   │   │   │           └── examples
+│   │   │   │               └── protos
+│   │   │   ├── hashicorp
+│   │   │   │   ├── consul
+│   │   │   │   │   └── api
+│   │   │   │   ├── errwrap
+│   │   │   │   ├── go-immutable-radix
+│   │   │   │   ├── go-memdb
+│   │   │   │   ├── go-msgpack
+│   │   │   │   │   └── codec
+│   │   │   │   ├── go-multierror
+│   │   │   │   ├── go-sockaddr
+│   │   │   │   ├── golang-lru
+│   │   │   │   │   └── simplelru
+│   │   │   │   ├── memberlist
+│   │   │   │   └── serf
+│   │   │   │       ├── coordinate
+│   │   │   │       └── serf
+│   │   │   ├── imdario
+│   │   │   │   └── mergo
+│   │   │   ├── inconshreveable
+│   │   │   │   └── mousetrap
+│   │   │   ├── ishidawataru
+│   │   │   │   └── sctp
+│   │   │   ├── jmespath
+│   │   │   │   └── go-jmespath
+│   │   │   ├── matttproud
+│   │   │   │   └── golang_protobuf_extensions
+│   │   │   │       └── pbutil
+│   │   │   ├── miekg
+│   │   │   │   └── dns
+│   │   │   ├── mistifyio
+│   │   │   │   └── go-zfs
+│   │   │   ├── mitchellh
+│   │   │   │   └── hashstructure
+│   │   │   ├── moby
+│   │   │   │   ├── buildkit
+│   │   │   │   │   ├── api
+│   │   │   │   │   │   ├── services
+│   │   │   │   │   │   │   └── control
+│   │   │   │   │   │   └── types
+│   │   │   │   │   ├── cache
+│   │   │   │   │   │   ├── contenthash
+│   │   │   │   │   │   ├── metadata
+│   │   │   │   │   │   ├── remotecache
+│   │   │   │   │   │   │   ├── inline
+│   │   │   │   │   │   │   ├── local
+│   │   │   │   │   │   │   ├── registry
+│   │   │   │   │   │   │   └── v1
+│   │   │   │   │   │   └── util
+│   │   │   │   │   ├── client
+│   │   │   │   │   │   ├── buildid
+│   │   │   │   │   │   ├── connhelper
+│   │   │   │   │   │   ├── llb
+│   │   │   │   │   │   │   └── imagemetaresolver
+│   │   │   │   │   │   └── ociindex
+│   │   │   │   │   ├── cmd
+│   │   │   │   │   │   └── buildkitd
+│   │   │   │   │   │       └── config
+│   │   │   │   │   ├── control
+│   │   │   │   │   │   └── gateway
+│   │   │   │   │   ├── executor
+│   │   │   │   │   │   ├── oci
+│   │   │   │   │   │   └── runcexecutor
+│   │   │   │   │   ├── exporter
+│   │   │   │   │   │   ├── containerimage
+│   │   │   │   │   │   │   └── exptypes
+│   │   │   │   │   │   ├── local
+│   │   │   │   │   │   └── tar
+│   │   │   │   │   ├── frontend
+│   │   │   │   │   │   ├── dockerfile
+│   │   │   │   │   │   │   ├── builder
+│   │   │   │   │   │   │   ├── command
+│   │   │   │   │   │   │   ├── dockerfile2llb
+│   │   │   │   │   │   │   ├── dockerignore
+│   │   │   │   │   │   │   ├── instructions
+│   │   │   │   │   │   │   ├── parser
+│   │   │   │   │   │   │   └── shell
+│   │   │   │   │   │   ├── gateway
+│   │   │   │   │   │   │   ├── client
+│   │   │   │   │   │   │   ├── forwarder
+│   │   │   │   │   │   │   ├── grpcclient
+│   │   │   │   │   │   │   └── pb
+│   │   │   │   │   │   └── subrequests
+│   │   │   │   │   ├── identity
+│   │   │   │   │   ├── session
+│   │   │   │   │   │   ├── auth
+│   │   │   │   │   │   ├── content
+│   │   │   │   │   │   ├── filesync
+│   │   │   │   │   │   ├── grpchijack
+│   │   │   │   │   │   ├── secrets
+│   │   │   │   │   │   ├── sshforward
+│   │   │   │   │   │   └── upload
+│   │   │   │   │   ├── snapshot
+│   │   │   │   │   │   └── containerd
+│   │   │   │   │   ├── solver
+│   │   │   │   │   │   ├── bboltcachestorage
+│   │   │   │   │   │   ├── errdefs
+│   │   │   │   │   │   ├── internal
+│   │   │   │   │   │   │   └── pipe
+│   │   │   │   │   │   ├── llbsolver
+│   │   │   │   │   │   │   ├── errdefs
+│   │   │   │   │   │   │   ├── file
+│   │   │   │   │   │   │   ├── mounts
+│   │   │   │   │   │   │   └── ops
+│   │   │   │   │   │   │       └── fileoptypes
+│   │   │   │   │   │   └── pb
+│   │   │   │   │   ├── source
+│   │   │   │   │   │   ├── git
+│   │   │   │   │   │   ├── http
+│   │   │   │   │   │   └── local
+│   │   │   │   │   ├── util
+│   │   │   │   │   │   ├── apicaps
+│   │   │   │   │   │   │   └── pb
+│   │   │   │   │   │   ├── appdefaults
+│   │   │   │   │   │   ├── archutil
+│   │   │   │   │   │   ├── compression
+│   │   │   │   │   │   ├── cond
+│   │   │   │   │   │   ├── contentutil
+│   │   │   │   │   │   ├── entitlements
+│   │   │   │   │   │   │   └── security
+│   │   │   │   │   │   ├── flightcontrol
+│   │   │   │   │   │   ├── grpcerrors
+│   │   │   │   │   │   ├── imageutil
+│   │   │   │   │   │   ├── leaseutil
+│   │   │   │   │   │   ├── network
+│   │   │   │   │   │   ├── progress
+│   │   │   │   │   │   │   └── logs
+│   │   │   │   │   │   ├── pull
+│   │   │   │   │   │   │   └── pullprogress
+│   │   │   │   │   │   ├── resolver
+│   │   │   │   │   │   │   └── retryhandler
+│   │   │   │   │   │   ├── rootless
+│   │   │   │   │   │   │   └── specconv
+│   │   │   │   │   │   ├── sshutil
+│   │   │   │   │   │   ├── stack
+│   │   │   │   │   │   ├── system
+│   │   │   │   │   │   ├── throttle
+│   │   │   │   │   │   ├── tracing
+│   │   │   │   │   │   └── winlayers
+│   │   │   │   │   └── worker
+│   │   │   │   ├── ipvs
+│   │   │   │   ├── locker
+│   │   │   │   ├── sys
+│   │   │   │   │   ├── mount
+│   │   │   │   │   ├── mountinfo
+│   │   │   │   │   └── symlink
+│   │   │   │   └── term
+│   │   │   │       └── windows
+│   │   │   ├── morikuni
+│   │   │   │   └── aec
+│   │   │   ├── opencontainers
+│   │   │   │   ├── go-digest
+│   │   │   │   ├── image-spec
+│   │   │   │   │   ├── identity
+│   │   │   │   │   └── specs-go
+│   │   │   │   │       └── v1
+│   │   │   │   ├── runc
+│   │   │   │   │   └── libcontainer
+│   │   │   │   │       ├── apparmor
+│   │   │   │   │       ├── cgroups
+│   │   │   │   │       ├── configs
+│   │   │   │   │       ├── devices
+│   │   │   │   │       ├── nsenter
+│   │   │   │   │       ├── user
+│   │   │   │   │       └── utils
+│   │   │   │   ├── runtime-spec
+│   │   │   │   │   └── specs-go
+│   │   │   │   └── selinux
+│   │   │   │       ├── go-selinux
+│   │   │   │       │   └── label
+│   │   │   │       └── pkg
+│   │   │   │           └── pwalk
+│   │   │   ├── opentracing
+│   │   │   │   └── opentracing-go
+│   │   │   │       ├── ext
+│   │   │   │       └── log
+│   │   │   ├── opentracing-contrib
+│   │   │   │   └── go-stdlib
+│   │   │   │       └── nethttp
+│   │   │   ├── philhofer
+│   │   │   │   └── fwd
+│   │   │   ├── pkg
+│   │   │   │   └── errors
+│   │   │   ├── prometheus
+│   │   │   │   ├── client_golang
+│   │   │   │   │   └── prometheus
+│   │   │   │   │       ├── internal
+│   │   │   │   │       └── promhttp
+│   │   │   │   ├── client_model
+│   │   │   │   │   └── go
+│   │   │   │   ├── common
+│   │   │   │   │   ├── expfmt
+│   │   │   │   │   ├── internal
+│   │   │   │   │   │   └── bitbucket.org
+│   │   │   │   │   │       └── ww
+│   │   │   │   │   │           └── goautoneg
+│   │   │   │   │   └── model
+│   │   │   │   └── procfs
+│   │   │   │       └── internal
+│   │   │   │           ├── fs
+│   │   │   │           └── util
+│   │   │   ├── samuel
+│   │   │   │   └── go-zookeeper
+│   │   │   │       └── zk
+│   │   │   ├── sean-
+│   │   │   │   └── seed
+│   │   │   ├── sirupsen
+│   │   │   │   └── logrus
+│   │   │   ├── spf13
+│   │   │   │   ├── cobra
+│   │   │   │   └── pflag
+│   │   │   ├── syndtr
+│   │   │   │   └── gocapability
+│   │   │   │       └── capability
+│   │   │   ├── tchap
+│   │   │   │   └── go-patricia
+│   │   │   │       └── patricia
+│   │   │   ├── tinylib
+│   │   │   │   └── msgp
+│   │   │   │       └── msgp
+│   │   │   ├── tonistiigi
+│   │   │   │   ├── fsutil
+│   │   │   │   │   ├── copy
+│   │   │   │   │   └── types
+│   │   │   │   └── units
+│   │   │   ├── ugorji
+│   │   │   │   └── go
+│   │   │   │       └── codec
+│   │   │   ├── vbatts
+│   │   │   │   └── tar-split
+│   │   │   │       ├── archive
+│   │   │   │       │   └── tar
+│   │   │   │       └── tar
+│   │   │   │           ├── asm
+│   │   │   │           └── storage
+│   │   │   ├── vishvananda
+│   │   │   │   ├── netlink
+│   │   │   │   │   └── nl
+│   │   │   │   └── netns
+│   │   │   └── willf
+│   │   │       └── bitset
+│   │   ├── go.etcd.io
+│   │   │   └── bbolt
+│   │   ├── go.opencensus.io
+│   │   │   ├── internal
+│   │   │   │   └── tagencoding
+│   │   │   ├── metric
+│   │   │   │   ├── metricdata
+│   │   │   │   └── metricproducer
+│   │   │   ├── plugin
+│   │   │   │   ├── ocgrpc
+│   │   │   │   └── ochttp
+│   │   │   │       └── propagation
+│   │   │   │           └── b3
+│   │   │   ├── resource
+│   │   │   ├── stats
+│   │   │   │   ├── internal
+│   │   │   │   └── view
+│   │   │   ├── tag
+│   │   │   └── trace
+│   │   │       ├── internal
+│   │   │       ├── propagation
+│   │   │       └── tracestate
+│   │   ├── golang.org
+│   │   │   └── x
+│   │   │       ├── crypto
+│   │   │       │   ├── blowfish
+│   │   │       │   ├── chacha20
+│   │   │       │   ├── cryptobyte
+│   │   │       │   │   └── asn1
+│   │   │       │   ├── curve25519
+│   │   │       │   ├── ed25519
+│   │   │       │   │   └── internal
+│   │   │       │   │       └── edwards25519
+│   │   │       │   ├── internal
+│   │   │       │   │   └── subtle
+│   │   │       │   ├── nacl
+│   │   │       │   │   ├── secretbox
+│   │   │       │   │   └── sign
+│   │   │       │   ├── ocsp
+│   │   │       │   ├── otr
+│   │   │       │   ├── pbkdf2
+│   │   │       │   ├── pkcs12
+│   │   │       │   │   └── internal
+│   │   │       │   │       └── rc2
+│   │   │       │   ├── poly1305
+│   │   │       │   ├── salsa20
+│   │   │       │   │   └── salsa
+│   │   │       │   └── ssh
+│   │   │       │       ├── internal
+│   │   │       │       │   └── bcrypt_pbkdf
+│   │   │       │       └── test
+│   │   │       ├── net
+│   │   │       │   ├── bpf
+│   │   │       │   ├── context
+│   │   │       │   │   └── ctxhttp
+│   │   │       │   ├── http
+│   │   │       │   │   └── httpguts
+│   │   │       │   ├── http2
+│   │   │       │   │   └── hpack
+│   │   │       │   ├── idna
+│   │   │       │   ├── internal
+│   │   │       │   │   ├── iana
+│   │   │       │   │   ├── socket
+│   │   │       │   │   ├── socks
+│   │   │       │   │   └── timeseries
+│   │   │       │   ├── ipv4
+│   │   │       │   ├── ipv6
+│   │   │       │   ├── proxy
+│   │   │       │   ├── trace
+│   │   │       │   └── websocket
+│   │   │       ├── oauth2
+│   │   │       │   ├── google
+│   │   │       │   ├── internal
+│   │   │       │   ├── jws
+│   │   │       │   └── jwt
+│   │   │       ├── sync
+│   │   │       │   ├── errgroup
+│   │   │       │   ├── semaphore
+│   │   │       │   └── syncmap
+│   │   │       ├── sys
+│   │   │       │   ├── cpu
+│   │   │       │   ├── internal
+│   │   │       │   │   └── unsafeheader
+│   │   │       │   ├── unix
+│   │   │       │   └── windows
+│   │   │       │       ├── registry
+│   │   │       │       └── svc
+│   │   │       │           ├── debug
+│   │   │       │           ├── eventlog
+│   │   │       │           └── mgr
+│   │   │       ├── text
+│   │   │       │   ├── secure
+│   │   │       │   │   └── bidirule
+│   │   │       │   ├── transform
+│   │   │       │   └── unicode
+│   │   │       │       ├── bidi
+│   │   │       │       └── norm
+│   │   │       └── time
+│   │   │           └── rate
+│   │   ├── google.golang.org
+│   │   │   ├── api
+│   │   │   │   ├── googleapi
+│   │   │   │   │   └── transport
+│   │   │   │   ├── internal
+│   │   │   │   ├── iterator
+│   │   │   │   ├── option
+│   │   │   │   ├── support
+│   │   │   │   │   └── bundler
+│   │   │   │   └── transport
+│   │   │   │       ├── grpc
+│   │   │   │       └── http
+│   │   │   │           └── internal
+│   │   │   │               └── propagation
+│   │   │   ├── genproto
+│   │   │   │   ├── googleapis
+│   │   │   │   │   ├── api
+│   │   │   │   │   │   ├── annotations
+│   │   │   │   │   │   ├── distribution
+│   │   │   │   │   │   ├── label
+│   │   │   │   │   │   ├── metric
+│   │   │   │   │   │   └── monitoredres
+│   │   │   │   │   ├── logging
+│   │   │   │   │   │   ├── type
+│   │   │   │   │   │   └── v2
+│   │   │   │   │   └── rpc
+│   │   │   │   │       └── status
+│   │   │   │   └── protobuf
+│   │   │   │       └── field_mask
+│   │   │   └── grpc
+│   │   │       ├── attributes
+│   │   │       ├── backoff
+│   │   │       ├── balancer
+│   │   │       │   ├── base
+│   │   │       │   ├── grpclb
+│   │   │       │   │   └── grpc_lb_v1
+│   │   │       │   └── roundrobin
+│   │   │       ├── binarylog
+│   │   │       │   └── grpc_binarylog_v1
+│   │   │       ├── codes
+│   │   │       ├── connectivity
+│   │   │       ├── credentials
+│   │   │       │   ├── alts
+│   │   │       │   │   └── internal
+│   │   │       │   │       ├── authinfo
+│   │   │       │   │       ├── conn
+│   │   │       │   │       ├── handshaker
+│   │   │       │   │       │   └── service
+│   │   │       │   │       └── proto
+│   │   │       │   │           └── grpc_gcp
+│   │   │       │   ├── google
+│   │   │       │   ├── internal
+│   │   │       │   └── oauth
+│   │   │       ├── encoding
+│   │   │       │   └── proto
+│   │   │       ├── grpclog
+│   │   │       ├── health
+│   │   │       │   └── grpc_health_v1
+│   │   │       ├── internal
+│   │   │       │   ├── backoff
+│   │   │       │   ├── balancerload
+│   │   │       │   ├── binarylog
+│   │   │       │   ├── buffer
+│   │   │       │   ├── channelz
+│   │   │       │   ├── envconfig
+│   │   │       │   ├── grpcrand
+│   │   │       │   ├── grpcsync
+│   │   │       │   ├── resolver
+│   │   │       │   │   ├── dns
+│   │   │       │   │   └── passthrough
+│   │   │       │   ├── syscall
+│   │   │       │   └── transport
+│   │   │       ├── keepalive
+│   │   │       ├── metadata
+│   │   │       ├── naming
+│   │   │       ├── peer
+│   │   │       ├── resolver
+│   │   │       ├── serviceconfig
+│   │   │       ├── stats
+│   │   │       ├── status
+│   │   │       └── tap
+│   │   └── gotest.tools
+│   │       └── v3
+│   │           ├── assert
+│   │           │   └── cmp
+│   │           ├── env
+│   │           ├── fs
+│   │           ├── icmd
+│   │           ├── internal
+│   │           │   ├── cleanup
+│   │           │   ├── difflib
+│   │           │   ├── format
+│   │           │   └── source
+│   │           ├── poll
+│   │           ├── skip
+│   │           └── x
+│   │               └── subtest
+│   └── volume
+│       ├── drivers
+│       ├── local
+│       ├── mounts
+│       ├── service
+│       │   └── opts
+│       └── testutils
+└── packaging
+    ├── deb
+    │   ├── common
+    │   │   └── source
+    │   ├── debian-buster
+    │   ├── raspbian-buster
+    │   ├── ubuntu-bionic
+    │   ├── ubuntu-focal
+    │   ├── ubuntu-groovy
+    │   └── ubuntu-xenial
+    ├── plugins
+    ├── rpm
+    │   ├── SPECS
+    │   ├── centos-7
+    │   ├── centos-8
+    │   ├── fedora-31
+    │   ├── fedora-32
+    │   ├── fedora-33
+    │   └── rhel-7
+    ├── scripts
+    ├── static
+    │   └── scripts
+    └── systemd
+
+2323 directories
