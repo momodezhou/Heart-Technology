@@ -140,6 +140,10 @@ Server: Docker Engine - Community
 
 ```
 
+- deamon启动流程 
+   ![deamon启动流程](http://blog.daocloud.io/wp-content/uploads/2014/12/docker_main_%E8%BF%90%E8%A1%8C%E6%B5%81%E7%A8%8B.jpg)
+
+
 - 生命周期
 ![docker生命周期](https://upload-images.jianshu.io/upload_images/14944275-584653328788d81d.png "docker容器生命周期")
 ----
